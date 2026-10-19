@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.bg-section {
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  min-height: 80vh;
+  transition: background 0.3s ease;
+}
+
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e3e6f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+  color: #fff;
+}
+
+/* Theme 1: Blue */
+body.theme-blue .highlight-text {
+  color: #0d6efd;
+}
+body.theme-blue .hero-section {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+body.theme-blue .btn-theme {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+}
+
+/* Theme 2: Green */
+body.theme-green .highlight-text {
+  color: #198754;
+}
+body.theme-green .hero-section {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+}
+body.theme-green .btn-theme {
+  background-color: #198754;
+  color: #fff;
+  border: none;
+}
+
+/* Theme 3: Purple */
+body.theme-purple .highlight-text {
+  color: #6f42c1;
+}
+body.theme-purple .hero-section {
+  background: linear-gradient(135deg, #e9ecef 0%, #d6d8db 100%);
+}
+body.theme-purple .btn-theme {
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+}
